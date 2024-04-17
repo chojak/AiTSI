@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{815FE021-34CC-487F-B763-1FA4EF7CBCFC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Program", "src\Program\Program.csproj", "{AC0B27C4-E9F8-4C3A-85D8-EE6C6141E55E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E0947E0F-9FB6-412C-82A5-111E0EE917C4} = {E0947E0F-9FB6-412C-82A5-111E0EE917C4}
+		{9C35AEA6-2B45-4771-9D38-BFB988735686} = {9C35AEA6-2B45-4771-9D38-BFB988735686}
+		{BF28E918-2A88-47C5-9894-1D7824C8E2D4} = {BF28E918-2A88-47C5-9894-1D7824C8E2D4}
+		{45665B57-553A-4A83-B7A4-E565F8FD77DC} = {45665B57-553A-4A83-B7A4-E565F8FD77DC}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "resources", "resources", "{74888C4B-9914-4CE8-95B2-222470391BD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parser", "src\resources\Parser\Parser.csproj", "{BF28E918-2A88-47C5-9894-1D7824C8E2D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Analyzer", "src\resources\Analyzer\Analyzer.csproj", "{45665B57-553A-4A83-B7A4-E565F8FD77DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AC0B27C4-E9F8-4C3A-85D8-EE6C6141E55E} = {815FE021-34CC-487F-B763-1FA4EF7CBCFC}
+		{74888C4B-9914-4CE8-95B2-222470391BD8} = {815FE021-34CC-487F-B763-1FA4EF7CBCFC}
+		{BF28E918-2A88-47C5-9894-1D7824C8E2D4} = {74888C4B-9914-4CE8-95B2-222470391BD8}
+		{45665B57-553A-4A83-B7A4-E565F8FD77DC} = {74888C4B-9914-4CE8-95B2-222470391BD8}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AC0B27C4-E9F8-4C3A-85D8-EE6C6141E55E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC0B27C4-E9F8-4C3A-85D8-EE6C6141E55E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC0B27C4-E9F8-4C3A-85D8-EE6C6141E55E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC0B27C4-E9F8-4C3A-85D8-EE6C6141E55E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF28E918-2A88-47C5-9894-1D7824C8E2D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF28E918-2A88-47C5-9894-1D7824C8E2D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF28E918-2A88-47C5-9894-1D7824C8E2D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF28E918-2A88-47C5-9894-1D7824C8E2D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45665B57-553A-4A83-B7A4-E565F8FD77DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45665B57-553A-4A83-B7A4-E565F8FD77DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45665B57-553A-4A83-B7A4-E565F8FD77DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45665B57-553A-4A83-B7A4-E565F8FD77DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+EndGlobal
