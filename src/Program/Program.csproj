@@ -8,8 +8,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\resources\Analyzer\Analyzer.csproj"/>
-        <ProjectReference Include="..\resources\Parser\Parser.csproj"/>
+        <ProjectReference Include="..\resources\Analyzer\QueryProcessor.csproj" />
+        <ProjectReference Include="..\resources\Parser\Parser.csproj" />
     </ItemGroup>
 
 </Project>
