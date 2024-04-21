@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace QueryProcessor.Interfaces
 {
-    internal interface IQueryProcessor
+    public interface IQueryProcessor
     {
     }
 }

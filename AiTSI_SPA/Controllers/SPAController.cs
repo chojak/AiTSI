@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
+using Parser.Enums;
 using Parser.Models;
+
 
 namespace AiTSI_SPA.Controllers
 {
@@ -7,34 +9,34 @@ namespace AiTSI_SPA.Controllers
     [Route("[controller]")]
     public class SPAController : ControllerBase
     {
-        // tutaj ustawimy jakies statyczne potrzebne properties tak aby wszystko dzialalo elegancko
-        private static string albercik = "albercik";
-        //]
-
         [HttpPost("[action]")]
         public ActionResult<string> ProcedureToParse(string input)
         {
-            albercik = "input";
-            return Ok("super");
+            SPA.SPA.Parser.Parse(input);
+            return Ok(SPA.SPA.Parser.ProcedureToParse());
         }
 
         [HttpPost("[action]")]
         public ActionResult<string> ProcedureToParse_FromFile(IFormFile file)
         {
-            albercik = "testowy_Albercik";
-            return Ok("super");
+            using (var reader = new StreamReader(file.OpenReadStream()))
+            {
+                SPA.SPA.Parser.Parse(reader.ReadToEnd());
+            }
+
+            return Ok(SPA.SPA.Parser.ProcedureToParse());
         }
 
         [HttpPost("[action]")]
         public ActionResult<string> QueryToParse()
         {
-            return Ok("super");
+            return Ok();
         }
 
         [HttpPost("[action]")]
         public ActionResult<string> QueryToParse_FromFile(IFormFile file)
         {
-            return Ok("super");
+            return Ok();
         }
     }
 }

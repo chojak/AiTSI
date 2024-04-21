@@ -7,7 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\AST\AST.csproj"/>
+        <ProjectReference Include="..\Analyzer\QueryProcessor.csproj"/>
+        <ProjectReference Include="..\Parser\Parser.csproj"/>
     </ItemGroup>
 
 </Project>

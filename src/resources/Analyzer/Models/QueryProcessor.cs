@@ -1,5 +1,7 @@
-﻿namespace QueryProcessor.Models;
+﻿using QueryProcessor.Interfaces;
 
-public class QueryProcessor
+namespace QueryProcessor.Models;
+
+public class QueryProcessor : IQueryProcessor
 {
 }

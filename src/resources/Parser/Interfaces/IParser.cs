@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Xml.Linq;
+﻿using AST.Models;
 
 namespace Parser.Interfaces
 {
-    internal interface IParser
+    public interface IParser
     {
-        public void ProcedureToParse() { }
+        public void Parse(string input);
+        public string ProcedureToParse();
     }
 }
