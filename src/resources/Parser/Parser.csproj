@@ -7,7 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\AST\AST.csproj"/>
+        <ProjectReference Include="..\AST\AST.csproj" />
+        <ProjectReference Include="..\PKB\PKB.csproj" />
     </ItemGroup>
 
 </Project>

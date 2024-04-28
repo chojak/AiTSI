@@ -3,6 +3,8 @@ using AST.Models;
 using Parser.Interfaces;
 using Type = AST.Enums.Type;
 using Parser.Enums;
+using PKB.Interfaces;
+using AST.Nodes;
 
 namespace Parser.Models;
 
@@ -11,6 +13,12 @@ public class Parser : IParser
     private string _input;
     private string _token;
     private IAst _astTree;
+    private IPkb _pkb;
+
+    public Parser(IPkb pkb)
+    {
+        _pkb = pkb;
+    }
 
     public void Parse(string input)
     {

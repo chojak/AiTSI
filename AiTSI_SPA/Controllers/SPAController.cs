@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Parser.Enums;
 using Parser.Models;
+using PKB;
 
 
 namespace AiTSI_SPA.Controllers
@@ -9,10 +10,15 @@ namespace AiTSI_SPA.Controllers
     [Route("[controller]")]
     public class SPAController : ControllerBase
     {
+        public static PKB.PKB Pkb = new PKB.PKB();
+
         [HttpPost("[action]")]
         public ActionResult<string> ProcedureToParse(string input)
         {
-            SPA.SPA.Parser.Parse(input);
+            Pkb = new PKB.PKB();
+            var parser = new Parser.Models.Parser(Pkb);
+            parser.Parse(input);
+
             return Ok(SPA.SPA.Parser.ProcedureToParse());
         }
 

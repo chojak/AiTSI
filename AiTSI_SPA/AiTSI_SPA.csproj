@@ -14,8 +14,9 @@
   <ItemGroup>
     <ProjectReference Include="..\src\resources\Analyzer\QueryProcessor.csproj" />
     <ProjectReference Include="..\src\resources\Parser\Parser.csproj" />
-    <ProjectReference Include="..\src\resources\SPA\SPA.csproj"/>
-    <ProjectReference Include="..\src\tests\ResourcesTests\ResourcesTests.csproj" />
+    <ProjectReference Include="..\src\resources\SPA\SPA.csproj" />
+	<ProjectReference Include="..\src\tests\ResourcesTests\ResourcesTests.csproj" />
+	<ProjectReference Include="..\src\resources\PKB\PKB.csproj" />
   </ItemGroup>
 
 </Project>

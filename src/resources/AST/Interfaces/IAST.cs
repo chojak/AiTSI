@@ -1,4 +1,4 @@
-using AST.Models;
+using AST.Nodes;
 using Type = AST.Enums.Type;
 
 namespace AST.Interfaces;

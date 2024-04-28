@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace AST.Nodes
 {
-    public class Call : Statement
+    public abstract class Expression : Node_v2
     {
-        
+
     }
 }

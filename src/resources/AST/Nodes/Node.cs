@@ -1,6 +1,6 @@
 using System.Text;
 using PKB.Interfaces;
-namespace AST.Models;
+namespace AST.Nodes;
 
 using Type = Enums.Type;
 

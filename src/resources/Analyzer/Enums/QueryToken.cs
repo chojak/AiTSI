@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AST.Models
+namespace QueryProcessor.Enums
 {
-    public abstract class Expression_abstract_EXAMPLE : Node_abstract_EXAMPLE
+    public enum QueryToken
     {
-
     }
 }

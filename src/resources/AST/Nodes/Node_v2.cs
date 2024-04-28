@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AST.Models
+namespace AST.Nodes
 {
-    public abstract class Node_abstract_EXAMPLE
+    public abstract class Node_v2
     {
         public Node Parent { get; set; }
         public Node LeftSibling { get; set; }

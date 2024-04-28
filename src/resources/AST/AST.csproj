@@ -6,8 +6,8 @@
         <Nullable>enable</Nullable>
     </PropertyGroup>
 
-    <ItemGroup>
-      <ProjectReference Include="..\PKB\PKB.csproj" />
+     <ItemGroup>
+        <ProjectReference Include="..\PKB\PKB.csproj" />
     </ItemGroup>
 
 </Project>

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AST.Models
+namespace AST.Nodes
 {
-    public class Statement_abstract_EXAMPLE
+    public abstract class Statement : Node_v2
     {
         private int lineNumber;
     }
